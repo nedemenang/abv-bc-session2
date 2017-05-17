@@ -46,9 +46,9 @@
 describe("Car Class: Create a car, make it drive", function() {
 
     it("The car should be a type of `object`, and an instance of the `Car` class", function() {
-      var honda = new Car('Honda');
+      var honda = new myApp.Car('Honda', 'Accord');
       expect(typeof honda).toEqual(typeof {});
-      expect(honda instanceof Car).toBeTruthy();
+      expect(honda instanceof myApp.Car).toBeTruthy();
     });
 
     it("The car should be called 'General' if no name is passed as a parameter", function() {
@@ -71,7 +71,7 @@ describe("Car Class: Create a car, make it drive", function() {
       expect(porshe.numOfDoors).toBe(2);
       porshe.drive(5);
       expect(porshe.speed).toBe('250 km/h');
-      expect((function(){return new Car('Koenigsegg', 'Agera R');}()).numOfDoors).toBe(2);
+      expect((function(){return new myApp.Car('Koenigsegg', 'Agera R');}()).numOfDoors).toBe(2);
     });
 
     it("The car shoud have four (4) wheels except its a type of trailer", function() {
@@ -94,7 +94,7 @@ describe("Car Class: Create a car, make it drive", function() {
     it("The car drive function should return the instance of the Car class", function() {
       var man  = new myApp.Car('MAN', 'Truck', 'trailer');
       var drivingMan = man.drive(7);
-      expect(drivingMan instanceof Car).toBeTruthy();
+      expect(drivingMan instanceof myApp.Car).toBeTruthy();
       expect(typeof drivingMan.drive).toBe(typeof (function (){}));
       expect(man.speed).toBe(drivingMan.speed);
     });
