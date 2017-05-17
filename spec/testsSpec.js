@@ -5,6 +5,7 @@
   'use strict';
   
   const myApp = require('../app/library.js');
+  var request = require("request");
 
   describe("Fizz Buzz tests ", function() {
 
@@ -98,7 +99,6 @@ describe("Car Class: Create a car, make it drive", function() {
       expect(typeof drivingMan.drive).toBe(typeof (function (){}));
       expect(man.speed).toBe(drivingMan.speed);
     });
-
   });
 
 })();
