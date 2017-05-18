@@ -1,4 +1,4 @@
-# abv-bc-session1
+# abv-bc-session2
 Andela Boot camp day 3
 
 # Project Title
@@ -25,6 +25,8 @@ Any good text editor will do, however, i made use of sublime text
 ## Running the tests
 
 run npm test in terminal
+
+For the API task, run using node api/api.js in terminal.
 
 ### Break down into end to end tests
 
